@@ -1,6 +1,8 @@
 <template>
-  <div class="hello">
+  <div>
     <h1>{{ msg }}</h1>
+    <p>{{ count }}</p>
+    <button @click="addOne"> Like </button>
   </div>
 </template>
 
@@ -9,7 +11,13 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      count: 0
+    }
+  },
+  methods: {
+    addOne: function () {
+      this.count += 1
     }
   }
 }
