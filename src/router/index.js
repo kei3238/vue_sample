@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Main from '@/components/Main'
+import ButtonPage from '@/components/ButtonPage'
+import AnotherButtonPage from '@/components/AnotherButtonPage'
 
 Vue.use(Router)
 
@@ -8,8 +10,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Main',
+      component: Main
+    },
+    {
+      path: '/ButtonPage',
+      name: 'ButtonPage',
+      component: ButtonPage
+    },
+    {
+      path: '/AnotherButtonPage',
+      name: 'AnotherButtonPage',
+      component: AnotherButtonPage
     }
   ]
 })
