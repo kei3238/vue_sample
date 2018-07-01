@@ -3,10 +3,10 @@
     <h1>{{ msg }}</h1>
     <ul>
       <li>
-        <a href="/#/ButtonPage">Button</a>
+        <router-link to="/ButtonPage">Button</router-link>
       </li>
       <li>
-        <a href="/#/AnotherButtonPage">Another button</a>
+        <router-link to="/AnotherButtonPage">Another button</router-link>
       </li>
     </ul>
   </div>

@@ -5,7 +5,7 @@
       <button @click="addOne"> Like </button>
     </div>
     <div>
-      <a href="/#/">Back</a>
+      <router-link to="/">Back</router-link>
     </div>
   </div>
 </template>
