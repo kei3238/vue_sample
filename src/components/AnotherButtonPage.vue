@@ -13,14 +13,14 @@
 <script>
 export default {
   name: 'AnotherButtonPage',
-  data () {
-    return {
-      count: 0
+  computed: {
+    count () {
+      return this.$store.state.count
     }
   },
   methods: {
     addOne: function () {
-      this.count += 1
+      this.$store.dispatch('addOne')
     }
   }
 }
